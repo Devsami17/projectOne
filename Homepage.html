@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotiveMuscle</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <link rel="stylesheet" href="gym.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* Additional styles if needed */
+  </style>
+</head>
+
+<body>
+  <header class="flex-wrap d-flex justify-content-normal container-fluid align-items-center">
+    <div class="col-lg-4 col-6 d-flex justify-content-start align-items-center logo">
+      <img src="Logo_MotiveMuscle_2.png" alt="" height="30px">
+    </div>
+    <div class="col-lg-6 justify-content-around d-flex align-items-center">
+      <a href="">HOME</a>
+      <a href="">PRODUCTS</a>
+      <a href="">SERVICES</a>
+      <a href="">ABOUT</a>
+      <a href="">CONTACT</a>
+    </div>
+    <div class="col-lg-2 col-6  justify-content-end gap-4 d-flex align-items-center" style="margin-left: -10px;">
+
+      <span class="user-circle position-relative">
+        <img id="image-2" src="blank-profile-picture-973460_960_720.png" alt=""
+          style="object-fit: cover; height: 25px; border-radius: 50%  !important; width: 25px;">
+        <i class="position-absolute top-100 start-100 translate-middle bg-success rounded-circle"
+          style="padding: 4px; left:19px !important;top: 27px !important;"></i>
+        <div class="position-absolute profile-toggle ">
+          <div class="d-flex  flex-row flex-wrap">
+            <span class="user-circle-2 position-absolute ">
+              <img id="image-3" src="blank-profile-picture-973460_960_720.png" alt=""
+                style="object-fit: cover; height: 25px; border-radius: 50%  !important; width: 25px;">
+
+              <i class="position-absolute top-100 start-100 translate-middle bg-success rounded-circle"
+                style="padding: 5px; left:23px !important;top: 25px !important;"></i>
+            </span>
+            <span>
+              <button type="button" class="btn-close btn-close-white position-absolute d-flex" data-bs-dismiss="modal"
+                aria-label="Close" style="left: 75%; top: 15px;" onclick="closeBtn()">
+              </button>
+            </span>
+
+          </div>
+
+          <a href="" id="name-user">Unknown</a>
+          <a href="">Language</a>
+          <a href="" onclick="Logout()">Logout ></a>
+        </div>
+      </span>
+      <span class="fa-solid fa-shopping-cart position-relative">
+        <i class="position-absolute top-100 start-100 translate-middle bg-danger rounded-circle"
+          style="padding: 3px; left:18px !important;top: 16px !important;">0</i>
+      </span>
+
+
+
+      <div class="Toggle-icon ">
+        <label class="hamburger">
+          <input type="checkbox">
+          <svg viewBox="0 0 32 32" onclick="hamburger()">
+            <path class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+            </path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+      </div>
+
+
+
+    </div>
+  </header>
+
+  <!-- section 1 starts -->
+  <main>
+    <div class="container-fluid d-flex justify-content-around  section-1">
+      <div class="stripes">
+        <div class="line-one"></div>
+        <div class="line-two"></div>
+      </div>
+      <div class="col-lg-6  d-flex justify-content-center   align-items-end  ">
+        <img src="builder 4.png" alt="" class="sec-1-img" height="650px">
+      </div>
+      <div class="col-lg-6   text-left titles  ">
+        <h2>SHAPE YOUR BODY</h2>
+        <h1>BE <span style="color: red;">STRONG</span></h1>
+        <h1 style="margin-top: -15px;">TRAINING HARD</h1>
+        <button type="button">Join Us</button>
+      </div>
+    </div>
+<!-- section-2 -->
+
+
+
+
+
+    <div class="section-2 w-100" id="section-2">
+     <div class="two">
+      <div class="text-area"><h1>ASAP ! Join Our</h1><h2>Gym Community.</h2></div>
+      
+      <div class="text-area-hover"><h1>ASAP ! Join Our</h1><h2>Gym Community.</h2></div>
+      </div>
+    
+ <button class="btn-12"><span>Join NOW</span></button> 
+  
+
+
+
+    </div>
+
+
+<!-- section 3 -->
+
+
+    <div class=" d-flex flex-wrap col-lg-12 justify-content-between   ">
+      <div class="sec-3-boxes  col-lg-6 col-12 ">
+        <img src="Images/info-box-vector-1.png" alt="">
+        <h2>GROUP FITNESS</h2>
+        <p>Improve your body strength. <br> Join our group trainings and get in shape fast.</p>
+        <span>Read More <i class="fa-solid fa-arrow-right"></i></span>
+
+      </div>
+      <div class="sec-3-boxes col-lg-6 col-12">
+        <img src="Images/info-box-vector-2.png" alt="">
+        <h2>PERSONAL TRAINER</h2>
+        <p>Stay motivated. Our personal <br>trainers will help you find a perfect workout.</p>
+        <span>Read More <i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+      <div class="sec-3-boxes col-lg-6 col-12">
+        <img src="Images/info-box-vector-3.png" alt="">
+        <h2>CARDIO PROGRAM</h2>
+        <p>Get your best body ever. <br> Our trainers will build your perfect cardio workout.</p>
+        <span>Read More <i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+      <div class="sec-3-boxes col-lg-6 col-12">
+        <img src="Images/info-box-vector-1.png" alt="">
+        <h2>YOGA CAMP</h2>
+        <p>Improve your body strength. <br> Join our group trainings and get in shape fast.</p>
+        <span>Read More <i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+
+
+    </div>
+
+
+    <!-- section 4 -->
+
+
+
+    <div class="section-4">
+
+
+      <div id="carouselExampleControls" class="carousel slide overflow-hidden " data-bs-ride="carousel"
+        data-mdb-interval="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Since starting the over 60's mat class at create, I am much more aware of my body, how I move and my
+              posture. As a result, I no longer take pain medication for my back!</p>
+            <span>HENRY WALKER , NUTRITIONIST</span>
+          </div>
+          <div class="carousel-item">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>I am at an age where I just want to be fit and healthy. Our bodies are our responsibility! So start
+              caring for your body and it will care for you. Eat clean and workout hard. </p>
+            <span>HENRY WALKER , NUTRITIONIST</span>
+          </div>
+          <div class="carousel-item">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>everyone is obsessed with having a good body. Dieting, exercising, and lots of stuff they do to achieve
+              their goal. Gym memberships usually grow, especially after the holidays when people eat so much. </p>
+            <span>HENRY WALKER , NUTRITIONIST</span>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- section-5 -->
+
+
+
+    <div class="section-5">
+      <div>
+        <h5>TRAINING PROGRAMS</h5>
+        <p>Let us take your workout routines to the next level with <br> our full-body programs and intensity
+          challenges. Find a training that matches your needs.</p>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between Section-5-boxes ">
+
+        <div class="col-lg-6 d-flex flex-wrap  ">
+          <div class="col-lg-6 col-12">
+            <h3>CROSSFIT</h3>
+            <p>Curabitur ullamcorper <br>ultricies nisi. Nam eget dui. <br> Etiam rhoncus maecenas</p>
+            <span>Read More <i class="fa-solid fa-arrow-right"></i></span>
+
+          </div>
+          <div class="col-lg-6 overflow-hidden col-12 ">
+            <img src="Images/sec-5-1.jpg" alt="" class="col-lg-12 col-12">
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex flex-wrap  ">
+          <div class="col-lg-6 col-12 ">
+            <h3>BODY BALANCE</h3>
+            <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus maecenas</p>
+            <span>Read More <i class="fa-solid fa-arrow-right"></i></span>
+
+          </div>
+          <div class="col-lg-6 overflow-hidden col-12  ">
+            <img src="Images/sec-5-2.jpg" alt="" class="col-lg-12 col-12">
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex flex-wrap ">
+          <div class="col-lg-6 overflow-hidden col-12 mt-4 mt-lg-0">
+            <img src="Images/sec-5-3.jpg" alt="" class="col-lg-12 col-12">
+
+          </div>
+          <div class="col-lg-6 col-12">
+
+            <h3>CARDIO</h3>
+            <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus maecenas</p>
+            <span>Read More <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex flex-wrap ">
+          <div class="col-lg-6 overflow-hidden col-12 ">
+            <img src="Images/sec-5-4.jpg" alt="" class="col-lg-12 col-12">
+
+          </div>
+          <div class="col-lg-6 col-12 ">
+
+            <h3>BOX</h3>
+            <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus maecenas</p>
+            <span>Read More <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="section-6  ">
+      <div class="d-flex flex-wrap justify-content-lg-around justify-content-normal  ">
+        <div class="col-lg-4 col-12">
+<h1>MEET OUR</h1>
+<h1>STRONGEST TEAM</h1>
+
+</div>
+<div class="col-lg-4 d-flex gap-2 col-12 justify-content-center ">
+<button>READ MORE</button> <button><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+</div>
+<div class="d-flex justify-content-around flex-wrap">
+
+<div class="col-lg-2 position-relative ">
+  <img src="Images/team-img-1.jpg" alt="">
+
+
+</div>
+<div class="col-lg-2">
+  <img src="Images/team-img-2.jpg" alt="">
+</div>
+<div class="col-lg-2">
+  <img src="Images/team-img-3.jpg" alt="">
+</div>
+<div class="col-lg-2">
+  <img src="Images/team-img-4.jpg" alt="">
+</div>
+
+
+</div>
+
+    </div>
+
+<!-- section 7 -->
+
+
+<div class="container-fluid section-7">
+  <div>
+  <h1>CLASSES TIMETABLE</h1>
+  </div>
+<div class="d-flex justify-content-center flex-wrap gap-3 mt-5 ">
+  <button  onclick="allTable()">ALL TRANINGS</button>
+  <button  onclick="bodyTable()">BODYBUILDING</button>
+  <button  onclick="cardioTable()">CARDIO</button>
+  <button  onclick="gymTable()">GYM</button>
+  <button  onclick="powerTable()">POWERLIFTING</button>
+  
+
+</div>
+  <table class="table table-dark table-bordered  table-responsive mt-5">
+    <thead>
+      <tr>
+        <th scope="col" class="last-row"></th>
+        <th scope="col">MONDAY</th>
+        <th scope="col">TUESDAY</th>
+        <th scope="col">wednesday</th>
+        <th scope="col">thursday</th>
+        <th scope="col" class="first-row">friday</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+
+
+      
+    </tbody>
+  </table>
+
+
+</div>
+
+
+<!-- section - 8 -->
+
+
+<div class="container   section-8"> 
+
+<div >
+<h1>
+  MEET THE PRO'S
+</h1>
+<p>These Are Our Special Trained Trainers.Body Make With Them<br>Their ability to provide constructive feedback ensures clients perform exercises with proper form, minimizing the risk of injury and maximizing results.  </p>
+</div>
+<!-- slider -->
+<div class="">
+
+  
+<div class="responsive mt-lg-5">
+
+<div>
+  <img src="Images/traine-1.jpg" alt="" loading="lazy">
+  <p>Jake Mitchell
+  </p>
+  <span>Fitness Coach</span>
+</div>
+<div>
+  <img src="traine-2.jpg" alt="" loading="lazy">
+  <p>Ashley Taylor
+  </p>
+  <span>Fitness Coach</span>
+</div>
+<div>
+  <img src="traine-3.jpg" alt="" loading="lazy">
+  <p>Brandon Davis
+  </p>
+  <span>Fitness Coach</span>
+</div>
+<div>
+  <img src="traine-4.jpg" alt="" loading="lazy">
+  <p>Haley Carter
+  </p>
+  <span>Fitness Coach</span>
+</div>
+<div>
+  <img src="traine-5.jpg" alt="" loading="lazy">
+  <p>Kyle Roberts
+  </p> 
+  <span>Fitness Coach</span>
+</div>
+<div>
+  <img src="traine-6.jpg" alt="" loading="lazy">
+  <p>Jordan Wilson
+  </p>
+  <span>Fitness Coach</span>
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+  </main>
+  <footer class="d-flex flex-wrap justify-content-around position-relative  ">
+
+<div class="col-lg-2">
+<ul>
+  <li>SERVICES</li>
+  <li>Personal Training</li>
+  <li>Online Training</li>
+  <li>Complaining Form</li>
+  <li>MemberShip Form</li>
+  <li>Create An Account</li>
+</ul>
+</div>
+<div class="col-lg-2">
+  <ul>
+    <li>MENU</li>
+    <li>Home</li>
+    <li>About</li>
+    <li>Services</li>
+    <li>Products</li>
+    <li>Contact</li>
+  </ul>
+</div>
+<div class="col-lg-2">
+  <ul>
+    <li>TRAINERS</li>
+    <li>Jake Mitchell</li>
+    <li>Ashley Taylor</li>
+    <li>Morgan Johnson</li>
+    <li>Jordan Wilson</li>
+    <li>Kyle Roberts</li>
+  </ul>
+</div>
+<div class="col-lg-2">
+  <ul>
+    <li>ADDRESS</li>
+    <li><span class="fa-solid fa-location-dot"></span> 228 Washington St,<br>New-York <br>NY 10025</li>
+    <li><span class="fa-solid fa-envelope "></span> MotiveMuscle@.net</li>
+    <li><span class="fa-solid fa-phone"></span>  111-000-555</li>
+  </ul>
+</div>
+
+<h5 class="text-center position-absolute"><span class="fa-regular fa-copyright"></span> Offically Created By Abdus Sami Developer</h5>
+    
+  </footer>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js"
+    integrity="sha512-j0ThLeHF8KI1DZjV/vAJ0CKkDAMAsZbFA1KarA2jIfzAmXn3di3krSq9LJrv/gBVsUnouKqS/agIoQpxj/3Hkg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Your other scripts -->
+</body>
+
+</html>
+<script>
+  $(document).ready(() => {
+    $('.profile-toggle').hide();
+
+    $('.user-circle').click(() => {
+      $('.profile-toggle').show(500);
+    });
+
+    $('.btn-close').click((e) => {
+      e.preventDefault();  // Prevent the default behavior of the button
+      e.stopPropagation(); // Stop event propagation to prevent it from reaching the document
+
+      $('.profile-toggle').hide(500);
+    });
+  });
+
+  var image2 = document.getElementById('image-2');
+  var image3 = document.getElementById('image-3');
+  const savedImage = localStorage.getItem('image');
+  if (savedImage) {
+    image2.src = savedImage;
+    image3.src = savedImage;
+  }
+
+  var menuInput = document.getElementById('name-user');
+  var localName = localStorage.getItem('Setuser');
+  if (localName) {
+    menuInput.innerHTML = localName;
+  } else {
+    menuInput.innerHTML = 'Unknown';
+  }
+
+  function Logout() {
+    localStorage.clear();
+  }
+
+
+  //title notifications 
+
+  let alert = false;
+  const interval = setInterval(() => {
+    document.title = alert ? 'GYM WEBSITE' : 'Sale 25% On MemberShip';
+    alert = !alert;
+  }, 2000);
+
+  $('.responsive').slick({
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+
+
+</script>

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Syne:wght@400;500;600;700;800&display=swap');
+
+.section-1 {
+    background: url(bg3.jpg);
+    background-position: center;
+    background-size: cover;
+  
+    backdrop-filter: Grayscale(20%);
+    background-repeat: no-repeat;
+}
+
+header div:nth-child(2) div a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: 'Syne',sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+header div:nth-child(2) div a:hover{
+    color: red;
+   font-weight: 600;
+    
+}
+.r{
+background-color: red !important;
+}
+.g{
+    background-color: green !important;
+    }
+    .b{
+        background-color: black !important;
+        }
+        header i{
+            color: #fff;
+            font-size: 18px;
+        }
+        header span{
+            font-size: 8px !important;
+            border-radius: 50% !important;
+            width: 14px !important;
+            height: 14px !important;
+            left: 12px !important;
+            background-color: red !important;
+            top: 9px !important;
+            padding: 5px;
+            font-family: 'Poppins';
+            font-weight: 900;
+        }
+
+        .section-1{
+            height:500px;
+        }
+        .section-1 p{
+font-family: 'Rajdhani';
+color: white;
+font-weight: 500;
+        }

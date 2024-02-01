@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Price Alert Website</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Price Alert System</h1>
+  </header>
+  
+  <main>
+    <section>
+      <h2>Select Asset:</h2>
+      <select id="assetSelect">
+        <!-- Populate this dropdown with available assets -->
+      </select>
+    </section>
+    
+    <section>
+      <h2>Set Price Alert:</h2>
+      <form id="alertForm">
+        <label for="priceInput">Price:</label>
+        <input type="number" id="priceInput" placeholder="Enter price">
+        
+        <label for="conditionSelect">Condition:</label>
+        <select id="conditionSelect">
+          <option value="above">Above</option>
+          <option value="below">Below</option>
+        </select>
+        
+        <button type="submit">Set Alert</button>
+      </form>
+    </section>
+    
+    <section>
+      <h2>Alerts:</h2>
+      <ul id="alertsList">
+        <!-- Display triggered alerts here -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+<script>
+   // Fetch available assets from the TradingView API
+function fetchAssets() {
+  // Make an API call to retrieve available assets
+  // Replace 'YOUR_API_ENDPOINT' with the actual TradingView API endpoint
+  fetch('Bearer ACCESS_TOKEN')
+    .then(response => response.json())
+    .then(data => {
+      const assetSelect = document.getElementById('assetSelect');
+      data.assets.forEach(asset => {
+        const option = document.createElement('option');
+        option.value = asset.symbol;
+        option.textContent = asset.name;
+        assetSelect.appendChild(option);
+      });
+    })
+    .catch(error => console.error('Error fetching assets:', error));
+}
+
+// Function to set price alert
+function setPriceAlert(asset, price, condition) {
+  // Make an API call to set price alerts using TradingView API
+  // Use the provided asset, price, and condition to set up an alert
+  // Replace 'YOUR_API_ENDPOINT' with the actual TradingView API endpoint
+  // Example fetch call:
+  // fetch('YOUR_API_ENDPOINT', {
+  //   method: 'POST',
+  //   body: JSON.stringify({ asset, price, condition }),
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //     // Add any necessary authentication headers or tokens here
+  //   },
+  // })
+  // .then(response => {
+  //   // Handle response
+  // })
+  // .catch(error => console.error('Error setting price alert:', error));
+}
+
+// Event listener for form submission
+document.getElementById('alertForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const price = document.getElementById('priceInput').value;
+  const condition = document.getElementById('conditionSelect').value;
+  const selectedAsset = document.getElementById('assetSelect').value;
+
+  // Set price alert using the selected asset, price, and condition
+  setPriceAlert(selectedAsset, price, condition);
+
+  // Display the created alert in the alerts list
+  const alertsList = document.getElementById('alertsList');
+  const newAlert = document.createElement('li');
+  newAlert.textContent = `Alert set for ${selectedAsset} at ${condition} ${price}`;
+  alertsList.appendChild(newAlert);
+});
+
+// Fetch assets when the page loads
+fetchAssets();
+
+</script>
+
+
+
+
+.r {
+  background-color: red !important;
+}
+
+.g {
+  background-color: green !important;
+}
+
+.b {
+  background-color: black !important;
+}
+
+
+
+.section-1 {
+  background: url(bg3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.user-circle {
+  background-image: url(blank-profile-picture-973460_960_720.png);
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+header {
+  height: 60px;
+  background-color: transparent !important;
+  position: absolute;
+}
+
+header div:nth-child(1) img {
+  /* margin-top: -60px; */
+}
+
+header div {
+  height: 60px;
+}
+
+.section-1 {
+  height: 100vh;
+  background: url(bg3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Josefin Sans';
+  
+  font-weight: 600;
+  position: relative;
+}
+
+header span {
+  color: #fff;
+  font-size: 19px;
+}
+
+header a:hover {
+  color: #fff;
+}
+
+header a:after {
+  border-radius: 4px;
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #970d0d;
+  transition: width 0.4s;
+}
+
+header a:before{
+  content: '•';
+  left: -13px;
+  position: absolute;
+}
+
+header i {
+  font-size: 6px;
+}
+
+header a:hover:after {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+header a:hover:before{
+  content: "";
+  transition: all 0.4s ease-in-out;
+}
+.sec-1-img{
+  filter: saturate(110%)
+}
+.line-one {
+  position: fixed;
+  width: 80px;
+  height: 100vh;
+  background: #ff3131;
+  left: 23%;
+}
+
+.line-two {
+  position: fixed;
+  width: 70px;
+  height: 100vh;
+  background: #183d79;
+  left: 25%;
+}
+.section-1 h1{
+  font-family: 'Satisfy';
+  font-size: 70px;
+  color: #fff;
+  position: relative;
+  top: 30%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&family=Hammersmith+One&family=Lato:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700&family=Oregano&family=Poiret+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Syne:wght@400;500;600;700;800&display=swap');
